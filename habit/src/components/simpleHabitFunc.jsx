@@ -1,8 +1,7 @@
-import React , { useState, useRef, useCallback, useEffect } from 'react';
+import React , { useState, useCallback, useEffect } from 'react';
 
-const SimpleHabit = (props) => {
+const SimpleHabitFunc = (props) => {
   const [count, setCount] = useState(0);
-  const spanRef = useRef();
 
   const handleIncrement = useCallback(() => {
     setCount(count + 1);
@@ -14,7 +13,7 @@ const SimpleHabit = (props) => {
 
   return(
     <li className="habit">
-      <span ref={spanRef} className="habit-name">Reading</span>
+      <span className="habit-name">Reading</span>
       <span className="habit-count">{count}</span>
       <button className="habit-button habit-increase" onClick={handleIncrement}>
         <i className="fas fa-plus-square"></i>
@@ -24,4 +23,4 @@ const SimpleHabit = (props) => {
 };
 
 
-export default SimpleHabit;
+export default SimpleHabitFunc;

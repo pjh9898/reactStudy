@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import Habits from './components/habits';
 import Navbar from './components/navbar';
+import SimpleHabitClass from './components/simpleHabitClass';
 
 class App extends Component {
   state = {
