@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/********** font **********/
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff') format('woff'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff') format('woff'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff') format('woff'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
+        url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf') format('opentype');
+}
+
+/********** color **********/
+
+:root {
+	--color-black: #000;
+	--color-white: #FFF;
+	--color-title-grey: #464646;
+	--color-menu: #333333;
+	--color-subgrey: #8D8D8D;
+    --color-semi-darkgray: #C8C8C8;
+	--color-positive: #60C1F8;
+	--color-negative: #F86060;
+	--color-lightgrey: #E1E1E1;
+	--color-middlegrey: #BDBDBD;
+	--color-submenu: #121212;
+	--color-title-blue: #6E94F4;
+	--color-header: #1A1A1A;
+	--color-background: #F2F2F2;
+	--color-potal: #FFA19B;
+	--color-community: #4FC1B7;
+	--color-sns: #FFE889;
+	--color-overware: #3DBB89;
+}
+
+
+/********** basic setting **********/
+
+body {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+	cursor: pointer;
+}
+
+small {
+    color: var(--color-subgrey);
+    font-size: 14px;
+}
+
+button {
+	cursor: pointer;
+}
+
+/********** toggle activated **********/
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.rotate-table-icon{
+	transform: rotate(180deg);
+}
+
+.collapsed {
+    transform: translateX(-90px);
+}
+
+.nav-collapsed {
+    transform: translateX(-186px);
+}
+
+.fadeout {
+    opacity: 0;
+}
+
+.fadein {
+    opacity: 1 !important;
+}
+
+/* common style */
+.wrapper {
+    margin: 130px 99px 0 346px;
+}
+
+.page-title {
+    font-size: 20px;
+}
+
+.vr {
+    width: 1px;
+    height: 58px;
+    background-color: var(--color-semi-darkgray);
+}

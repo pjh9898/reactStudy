@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noljanolja</title>
+    <link rel="stylesheet" href="/common/reset.css">
+    <link rel="stylesheet" href="/common/style.css">
+    <link rel="stylesheet" href="/css/dashBoard.css">
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="header-area">
+                <img src="/img/icon/toggle.svg" alt="" class="toggle-icon" />
+            </div>
+            <div>
+                <a href="/view/login.html">
+                    <img src="/img/icon/signout.svg" alt="" />
+                    <span class="signout">로그아웃</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="logo-ppyy">
+            <a href="/view/dashBoard.html">
+                <img src="/img/logo.svg" alt="" class="img-ppyy" />
+            </a>
+        </div>
+        <div class="nav-list">
+            <div class="nav-dashboard">
+                <a href="/view/dashBoard.html">
+                    <img src="/img/icon/home.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/home.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">대시보드</span>
+                </a>
+            </div>
+            <div class="nav-user">
+                <a onclick="openUser()">
+                    <img src="/img/icon/user_circle.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/user_circle.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">회원 관리</span>
+                    <img src="/img/icon/arrow.svg" alt="" class="nav-arrow" />
+                </a>
+                <div class="submenu">
+                    <a href="#"> 출석 관리</a>
+                    <a href="#"> 추천인 관리</a>
+                    <a href="#"> 그룹회원 관리</a>
+                </div>
+            </div>
+            <div class="nav-exchange">
+                <a href="#">
+                    <img src="/img/icon/exchange.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/exchange.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">환전 관리</span>
+                </a>
+            </div>
+            <div class="nav-content">
+                <a onclick="openContent()">
+                    <img src="/img/icon/monitor.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/monitor.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">콘텐츠 관리</span>
+                    <img src="/img/icon/arrow.svg" alt="" class="nav-arrow" />
+                </a>
+                <div class="submenu">
+                    <a href="#"> 영상 이용 리스트 </a>
+                </div>
+            </div>
+            <div class="nav-reward">
+                <a href="#">
+                    <img src="/img/icon/point.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/point.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">리워드 관리</span>
+                </a>
+            </div>
+            <div class="nav-board">
+                <a onclick="openBoard()">
+                    <img src="/img/icon/board.svg" alt="" class="nav-icon" />
+                    <img src="/img/icon/board.svg" alt="" class="nav-icon-hidden" />
+                    <span class="nav-text">게시판</span>
+                    <img src="/img/icon/arrow.svg" alt="" class="nav-arrow" />
+                </a>
+                <div class="submenu">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 컨텐츠 시작 -->
+    <div class="wrapper">
+        <span class="page-title">Dashboard</span>
+        <div class="card-box">
+            <div>
+
+            </div>
+            <div class="vr"></div>
+            <div>
+
+            </div>
+            <div class="vr"></div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/common/main.js"></script>
+</body>
+</html>
